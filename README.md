@@ -61,3 +61,8 @@ python main.py
         status = 200
       then alert
 ```
+
+### Exemple de requête CSW getRecordById
+
+[https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/csw?service=CSW&version=2.0.2&elementSetName=full&request=GetRecordById&id=b705395e-a1c4-4e6c-b069-d35b2efe1a45](https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/csw?service=CSW&version=2.0.2&elementSetName=full&request=GetRecordById&id=b705395e-a1c4-4e6c-b069-d35b2efe1a45)
+
