@@ -80,7 +80,7 @@ if __name__ == '__main__':
         content = str(MDraw.read())
 
         try:
-            match = re.findall(r"(\/explore\/dataset\/)([a-z_-]*)\/", str(content))
+            match = re.findall(r"(\/explore\/dataset\/)([a-z0-9_-]*)", str(content))
             # le résultat est une liste dans un tuple
             list = match[0]
             ods_id = list[1]
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     """)
 
         except:
-            print(f" {uuid} -> pas de lien ODS")
+            print(f" {uuid} >>>>>> PAS DE LIEN ODS ")
 
         cpt += 1
         #if cpt == 3:
