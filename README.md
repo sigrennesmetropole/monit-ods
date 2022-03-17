@@ -44,3 +44,20 @@ TODO
 ```bash
 python main.py
 ```
+
+
+## Notes
+
+### exemple de configuration checkhost
+
+```
+    check host horodateur-rennes
+      with address data.rennesmetropole.fr
+      every "0 7-18 * * *"
+      if failed
+        port 443
+        protocol https
+        request /explore/dataset/horodateur-rennes/information/
+        status = 200
+      then alert
+```
